@@ -12,6 +12,11 @@ public class Player : MonoBehaviour
         points = startingPoints; 
     }
 
+    public void Update()
+    {
+        
+    }
+
     public void AlterPointsLevel(float quantity)
     {
         points += quantity;
