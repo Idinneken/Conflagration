@@ -24,7 +24,7 @@ public class ThirdPersonFreeCam : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y");
 
         // Calculate new rotation angles
-        xRotation += mouseY * rotationSpeed;
+        xRotation -= mouseY * rotationSpeed;
         yRotation += mouseX * rotationSpeed;
 
         // Clamp vertical rotation to the specified range
