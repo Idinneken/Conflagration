@@ -11,11 +11,12 @@ public class PauseGame : MonoBehaviour
     [SerializeField] private bool isMainMenu;
 
 
-    // Start is called before the first frame update
     void Start()
     {
-        textPaused.enabled = false;
+        textPaused.enabled = false; //Ensures UI isn't showing
 
+
+        //Checks if the current scene is the main menu
         Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.name != "MainMenu")
         {
@@ -24,30 +25,27 @@ public class PauseGame : MonoBehaviour
         {
             isMainMenu = true;
         }
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P) ) 
+        //whenever p is pressed other than on the main menu run pause function
+        if(Input.GetKeyDown(KeyCode.P)  && isMainMenu == false) 
         {
             Pause();
         }
     }
 
-    private void Pause()
+    private void Pause() // pauses the game using the Time.timescale
     {
         if (!isPaused)
         {
-            print("Is Paused");
             textPaused.enabled = true;
             Time.timeScale = 0f;
             isPaused = true;
         }
         else if (isPaused)
         {
-            print("Not Paused");
             textPaused.enabled = false;
             Time.timeScale += 1f;
             isPaused = false;

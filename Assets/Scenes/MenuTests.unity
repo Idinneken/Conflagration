@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 1285768752}
   - component: {fileID: 1285768751}
   - component: {fileID: 1285768753}
+  - component: {fileID: 1285768754}
   m_Layer: 5
   m_Name: GamePaused
   m_TagString: Untagged
@@ -440,6 +441,18 @@ MonoBehaviour:
   textPaused: {fileID: 1285768751}
   isPaused: 0
   isMainMenu: 0
+--- !u!114 &1285768754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285768749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1931216ea3e52f14da1f9198b03d2f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1448343259
 GameObject:
   m_ObjectHideFlags: 0
