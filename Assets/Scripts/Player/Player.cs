@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public float points;
     public int flameIntensity;
 
+    public float buttonMashForce;
+
     public void Start()
     {
         points = startingPoints; 
