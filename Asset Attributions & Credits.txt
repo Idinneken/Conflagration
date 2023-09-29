@@ -1,0 +1,14 @@
+Audio 
+
+Arthor       	sound effect	link								license
+newlocknew 	- Fire.Burning 	- https://freesound.org/people/newlocknew/sounds/626277/ 	- https://creativecommons.org/licenses/by-nc/4.0/
+
+florianreichelt	- Fire Auto Car on fire	- https://freesound.org/people/florianreichelt/sounds/563765/	- https://creativecommons.org/publicdomain/zero/1.0/
+
+florianreichelt	- Fire Crackles	- https://freesound.org/people/florianreichelt/sounds/563766/	- https://creativecommons.org/publicdomain/zero/1.0/
+
+ken788 		- Fire_Alarm	- https://freesound.org/people/ken788/sounds/386756/		- https://creativecommons.org/publicdomain/zero/1.0/
+
+MATRIXXX_	- Retro Inspect Sound, UI, or IN-Game Notifcation 	- https://freesound.org/people/MATRIXXX_/sounds/658266/ 	- https://creativecommons.org/publicdomain/zero/1.0/
+
+EminYILDRIM 	- Combat Whoosh - https://freesound.org/people/EminYILDIRIM/sounds/541210/ 	- https://creativecommons.org/licenses/by/4.0/
