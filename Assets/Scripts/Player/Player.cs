@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     private float startingPoints = 0;
     public float points;
+    public int flameIntensity;
 
     public void Start()
     {

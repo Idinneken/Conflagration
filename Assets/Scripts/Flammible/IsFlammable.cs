@@ -47,13 +47,21 @@ public class IsFlammable : MonoBehaviour
         }
     }
 
-    public bool TrySetAblaze(int intensity)
+    public bool TrySetAblazeReturn(int intensity)
     {
         if (intensity >= flameIntensityRequirement)
         {
             SetAblaze(); return true;
         }
         return false;
+    }
+
+    public void TrySetAblaze()
+    {
+        if (Singletons.instance.player.flameIntensity >= flameIntensityRequirement)
+        {
+            SetAblaze();
+        }
     }
 
     #region Setting ablaze/Extinguishing
