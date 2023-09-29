@@ -5352,9 +5352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2100fec190fb65d4e8165cc3b00f3fbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 1, g: 0, b: 0, a: 1}
-  endColor: {r: 0, g: 0, b: 1, a: 1}
-  pulsateSpeed: 1
+  startPulseColor: {r: 0, g: 0, b: 0, a: 0}
+  endPulseColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1019779665
 GameObject:
   m_ObjectHideFlags: 0
@@ -5715,8 +5714,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
+  initialIntensity: 0
   flameIntensity: 10
+  playerScale: 0
+  cameraDistance: 0
   buttonMashForce: 0.1
+  thirdPersonFreeCam: {fileID: 1754803040}
 --- !u!1 &1535868025
 GameObject:
   m_ObjectHideFlags: 0
