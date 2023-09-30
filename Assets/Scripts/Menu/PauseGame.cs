@@ -6,13 +6,16 @@ using TMPro;
 
 public class PauseGame : MonoBehaviour
 {
-    public TextMeshProUGUI textPaused;
+    private TextMeshProUGUI textPaused;
     [SerializeField] private bool isPaused;
     [SerializeField] private bool isMainMenu;
 
 
     void Start()
     {
+
+        textPaused = GetComponentInChildren<TextMeshProUGUI>();
+
         textPaused.enabled = false; //Ensures UI isn't showing
 
 
