@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
 public class LevelTracking : MonoBehaviour
@@ -13,9 +14,9 @@ public class LevelTracking : MonoBehaviour
     public int tier1Requirement;
     public int tier2Requirement;
 
-    public int tier0destroyed;
-    public int tier1destroyed;
-    public int tier2destroyed;
+    internal int tier0destroyed;
+    internal int tier1destroyed;
+    internal int tier2destroyed;
 
     void Start()
     {
