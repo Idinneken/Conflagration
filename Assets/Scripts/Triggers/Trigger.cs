@@ -5,12 +5,15 @@ using Extensions;
 
 public class Trigger : MonoBehaviour
 {
+    public string triggerID;
+
     public List<string> requiredKeys = new();
 
     [Header("Trigger conditions")]
     public bool triggerOnEnter;
     public bool triggerOnStay;
     public bool triggerOnExit;    
+    public bool disabled;
 
     [Header("Behaviour")]
     public bool callsEvent;
@@ -26,7 +29,7 @@ public class Trigger : MonoBehaviour
         bool objectInvokesTriggers = other.GetComponent<InvokesTriggers>() ?? false;
         bool keysSatisfied = other.GetComponent<InvokesTriggers>().keys.ContainsList(requiredKeys);
 
-        if (objectInvokesTriggers && keysSatisfied && triggerOnEnter)
+        if (objectInvokesTriggers && keysSatisfied && triggerOnEnter && !disabled)
         {
             if (callsEvent) { CallEvent(); }
 
@@ -39,7 +42,7 @@ public class Trigger : MonoBehaviour
         bool objectInvokesTriggers = other.GetComponent<InvokesTriggers>() ?? false;
         bool keysSatisfied = other.GetComponent<InvokesTriggers>().keys.ContainsList(requiredKeys);
 
-        if (objectInvokesTriggers && keysSatisfied && triggerOnStay)
+        if (objectInvokesTriggers && keysSatisfied && triggerOnStay && !disabled)
         {
             if (callsEvent) { CallEvent(); }
 
@@ -52,7 +55,7 @@ public class Trigger : MonoBehaviour
         bool objectInvokesTriggers = other.GetComponent<InvokesTriggers>() ?? false;
         bool keysSatisfied = other.GetComponent<InvokesTriggers>().keys.ContainsList(requiredKeys);
 
-        if (objectInvokesTriggers && keysSatisfied && triggerOnExit)
+        if (objectInvokesTriggers && keysSatisfied && triggerOnExit && !disabled)
         {
             if (callsEvent) { CallEvent(); }
 
