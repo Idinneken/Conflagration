@@ -197,6 +197,7 @@ public class IsFlammable : MonoBehaviour
 
     public void DestroyThis()
     {
+        Singletons.instance.levelTracking.FlammibleObjectDestroyed(flameIntensityRequirement);
         Destroy(gameObject);
     }
 }

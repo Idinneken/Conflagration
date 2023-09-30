@@ -22,9 +22,9 @@ public class Player : MonoBehaviour
 
     private static List<PlayerData> intensityScalePlayerData = new()
     {
-        { new PlayerData { flameIntensity = 0, scale = 1f, jumpForce = 5f, cameraDistance = 10f, buttonMashForce = 1f } },
-        { new PlayerData { flameIntensity = 1, scale = 2f, jumpForce = 10f, cameraDistance = 15f, buttonMashForce = 1.5f } },
-        { new PlayerData { flameIntensity = 2, scale = 5f, jumpForce = 15f, cameraDistance = 20f, buttonMashForce = 2f } },
+        { new PlayerData { flameIntensity = 0, scale = 1f, jumpForce = 5f, cameraDistance = 10f, buttonMashForce = 1f, speed = 10f } },
+        { new PlayerData { flameIntensity = 1, scale = 2f, jumpForce = 10f, cameraDistance = 15f, buttonMashForce = 1.5f, speed = 15f } },
+        { new PlayerData { flameIntensity = 2, scale = 5f, jumpForce = 15f, cameraDistance = 20f, buttonMashForce = 2f, speed = 20f } },
     };
 
     public void Start()
@@ -61,6 +61,7 @@ public class Player : MonoBehaviour
         this.playerData = playerData;
         playerFlameIntensity = playerData.flameIntensity;
         playerScale = playerData.scale; gameObject.transform.localScale = new Vector3(playerScale, playerScale, playerScale);
+        playerSpeed = playerData.speed; playerMovement.moveSpeed = playerData.speed;
         playerJumpForce = playerData.jumpForce; playerMovement.jumpForce = playerData.jumpForce;
         playerCameraDistance = playerData.cameraDistance; thirdPersonFreeCam.distance = playerData.cameraDistance;
         playerButtonMashForce = playerData.buttonMashForce;
@@ -72,6 +73,7 @@ public struct PlayerData
     public int flameIntensity;
     public float scale;
     public float jumpForce;
+    public float speed;
     public float cameraDistance;
     public float buttonMashForce;
 }

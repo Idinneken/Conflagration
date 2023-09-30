@@ -5734,6 +5734,7 @@ GameObject:
   - component: {fileID: 1535868028}
   - component: {fileID: 1535868027}
   - component: {fileID: 1535868029}
+  - component: {fileID: 1535868030}
   m_Layer: 0
   m_Name: const
   m_TagString: Untagged
@@ -5783,6 +5784,26 @@ MonoBehaviour:
   _persistent: 1
   <playerGameObject>k__BackingField: {fileID: 1484148359}
   <player>k__BackingField: {fileID: 1484148368}
+  <levelTracking>k__BackingField: {fileID: 1535868030}
+--- !u!114 &1535868030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535868025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a9a36691251a5348b111c41b01855a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allFlammables: []
+  tier0Requirement: 10
+  tier1Requirement: 20
+  tier2Requirement: 30
+  tier0destroyed: 0
+  tier1destroyed: 0
+  tier2destroyed: 0
 --- !u!1 &1578961194
 GameObject:
   m_ObjectHideFlags: 0

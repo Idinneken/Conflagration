@@ -7,6 +7,7 @@ public class Singletons : Singleton<Singletons>
 {
     [field: SerializeField] public GameObject playerGameObject { get; private set; }
     [field: SerializeField] public Player player { get; private set; }
+    [field: SerializeField] public LevelTracking levelTracking { get; private set; }
 
     protected override void OnAwake()
     {
