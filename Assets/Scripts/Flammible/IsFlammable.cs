@@ -82,7 +82,7 @@ public class IsFlammable : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.KeypadEnter))
             {
-                buttonMashProgress += Singletons.instance.player.buttonMashForce * buttonMashEffortMultiplier;
+                buttonMashProgress += Singletons.instance.player.playerButtonMashForce * buttonMashEffortMultiplier;
             }
 
             if (buttonMashProgress >= buttonMashThreshold)
@@ -114,7 +114,7 @@ public class IsFlammable : MonoBehaviour
 
     public void TrySetAblaze()
     {
-        if (Singletons.instance.player.flameIntensity >= flameIntensityRequirement && isFlammible)
+        if (Singletons.instance.player.playerFlameIntensity >= flameIntensityRequirement && isFlammible)
         {
             SetAblaze();
         }

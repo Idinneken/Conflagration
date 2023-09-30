@@ -5714,12 +5714,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points: 0
-  initialIntensity: 0
-  flameIntensity: 10
+  playerDataIndex: 0
+  playerFlameIntensity: 0
   playerScale: 0
-  cameraDistance: 0
-  buttonMashForce: 0.1
+  playerCameraDistance: 0
+  playerJumpForce: 0
+  playerSpeed: 0
+  playerButtonMashForce: 0
   thirdPersonFreeCam: {fileID: 1754803040}
+  playerMovement: {fileID: 1484148366}
 --- !u!1 &1535868025
 GameObject:
   m_ObjectHideFlags: 0
