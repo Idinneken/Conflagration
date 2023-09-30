@@ -22,9 +22,9 @@ public class Player : MonoBehaviour
 
     private static List<PlayerData> intensityScalePlayerData = new()
     {
-        { new PlayerData { flameIntensity = 0, scale = 1f, jumpForce = 5f, cameraDistance = 10f, buttonMashForce = 1f } },
-        { new PlayerData { flameIntensity = 1, scale = 2f, jumpForce = 10f, cameraDistance = 15f, buttonMashForce = 1.5f } },
-        { new PlayerData { flameIntensity = 2, scale = 5f, jumpForce = 15f, cameraDistance = 20f, buttonMashForce = 2f } },
+        { new PlayerData { flameIntensity = 0, scale = 1f, jumpForce = 5f, cameraDistance = 10f, buttonMashForce = 0.1f } },
+        { new PlayerData { flameIntensity = 1, scale = 2f, jumpForce = 10f, cameraDistance = 15f, buttonMashForce = 0.15f } },
+        { new PlayerData { flameIntensity = 2, scale = 5f, jumpForce = 15f, cameraDistance = 20f, buttonMashForce = 0.2f } },
     };
 
     public void Start()

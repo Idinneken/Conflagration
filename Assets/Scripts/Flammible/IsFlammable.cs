@@ -72,10 +72,15 @@ public class IsFlammable : MonoBehaviour
             Burn();
         }
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter) && !buttonMashingInProgress)
+        if (Input.GetKeyDown(KeyCode.KeypadEnter) && !buttonMashingInProgress && flameIntensityRequirement <= Singletons.instance.player.playerFlameIntensity)
         {
             buttonMashingInProgress = true;
             colourControl.PulsateBetween(Color.white, new Color(1f, 0.5f, 0.3f, 1f), 4f);
+
+            if(flameIntensityRequirement < Singletons.instance.player.playerFlameIntensity)
+            {
+                SetAblaze();
+            }
         }
 
         if (buttonMashingApplicable && buttonMashingInProgress && usesButtonMashing)
