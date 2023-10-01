@@ -72,7 +72,7 @@ public class IsFlammable : MonoBehaviour
             Burn();
         }
 
-        if (Input.GetKeyDown(KeyCode.KeypadEnter) && !buttonMashingInProgress && flameIntensityRequirement <= Singletons.instance.player.playerFlameIntensity)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !buttonMashingInProgress && flameIntensityRequirement <= Singletons.instance.player.playerFlameIntensity)
         {
             buttonMashingInProgress = true;
             colourControl.PulsateBetween(Color.white, new Color(1f, 0.5f, 0.3f, 1f), 4f);
@@ -85,7 +85,7 @@ public class IsFlammable : MonoBehaviour
 
         if (buttonMashingApplicable && buttonMashingInProgress && usesButtonMashing)
         {
-            if (Input.GetKeyDown(KeyCode.KeypadEnter))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 buttonMashProgress += Singletons.instance.player.playerButtonMashForce * buttonMashEffortMultiplier;
             }
