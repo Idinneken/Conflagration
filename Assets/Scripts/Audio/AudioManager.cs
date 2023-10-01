@@ -34,7 +34,7 @@ public class AudioManager : MonoBehaviour
     }
 
     //to use play audio function go to the script you want to call it from
-    //use " FindObjectOfType<AudioManager>().Play("Sound Name");
+    //use " FindObjectOfType<AudioManager>().PlayAudio("Sound Name");
 
     public void PlayAudio (string name)
     {
@@ -47,5 +47,18 @@ public class AudioManager : MonoBehaviour
         }
 
         s.source.Play();
+    }
+
+    public void StopAudio(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound: " + name + "not found");
+
+            return;
+        }
+
+        s.source.Stop();
     }
 }

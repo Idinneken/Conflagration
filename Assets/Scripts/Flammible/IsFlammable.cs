@@ -204,4 +204,5 @@ public class IsFlammable : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
 }

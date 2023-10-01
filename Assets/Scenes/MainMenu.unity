@@ -682,7 +682,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: LevelScene
+          m_StringArgument: Level01_Otto
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &471701610
@@ -876,19 +876,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: FireTier1
+  - name: 0FlameIntensity
     clip: {fileID: 8300000, guid: efb63ebad0169344ebe188822edb7fc7, type: 3}
     volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: FireTier2
+  - name: 1FlameIntensity
     clip: {fileID: 8300000, guid: 4d7cc9181236bba4c88eb945cb4594f5, type: 3}
     volume: 0.5
     pitch: 1
     loop: 1
     source: {fileID: 0}
-  - name: FireTier3
+  - name: 2FlameIntensity
     clip: {fileID: 8300000, guid: ab5813401f84f5844bb0dcc45295d0ab, type: 3}
     volume: 0.5
     pitch: 1

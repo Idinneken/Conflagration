@@ -32,6 +32,9 @@ public class Player : MonoBehaviour
         points = initialPoints;
         playerDataIndex = initialPlayerDataIndex;
         UpdatePlayerData(intensityScalePlayerData[initialPlayerDataIndex]);
+
+        string audioStart = (0).ToString() + "FlameIntensity";
+        FindFirstObjectByType<AudioManager>().PlayAudio(audioStart);
     }
 
     public void Update()
@@ -53,6 +56,9 @@ public class Player : MonoBehaviour
         if (playerDataIndex <= intensityScalePlayerData.Count)
         {
             UpdatePlayerData(intensityScalePlayerData[playerDataIndex]);
+            
+            PlayAudio(playerFlameIntensity);
+            
         }
     }
 
@@ -64,6 +70,18 @@ public class Player : MonoBehaviour
         playerJumpForce = playerData.jumpForce; playerMovement.jumpForce = playerData.jumpForce;
         playerCameraDistance = playerData.cameraDistance; thirdPersonFreeCam.distance = playerData.cameraDistance;
         playerButtonMashForce = playerData.buttonMashForce;
+    }
+
+    public void PlayAudio(int playerIntensity)
+    {
+        string fireAlarm = "FireAlarm";
+        FindFirstObjectByType<AudioManager>().PlayAudio(fireAlarm);
+
+        string previousIntensity = (playerIntensity - 1).ToString() + "FlameIntensity";
+        FindFirstObjectByType<AudioManager>().StopAudio(previousIntensity);
+
+        string audioIntensity = playerIntensity + "FlameIntensity" ;
+        FindFirstObjectByType<AudioManager>().PlayAudio(audioIntensity);
     }
 }
 
