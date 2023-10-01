@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayableLevels/Level01_Otto.unity
     guid: c1b9d3ecb00033a40993766adacff910
+  - enabled: 1
+    path: Assets/Scenes/LevelScene.unity
+    guid: 45c2b72d4b0726f4bb49a6d8c526bc83
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

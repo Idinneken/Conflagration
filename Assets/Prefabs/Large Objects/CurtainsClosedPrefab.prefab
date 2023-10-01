@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4227899898549107213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3595935333362802871}
+  - component: {fileID: 452769780610543378}
+  - component: {fileID: 2426447334117366744}
+  - component: {fileID: 4664178063976379877}
+  - component: {fileID: 1582063250349743913}
+  m_Layer: 0
+  m_Name: CurtainsClosedPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3595935333362802871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227899898549107213}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 10.43, z: -9.01}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &452769780610543378
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227899898549107213}
+  m_Mesh: {fileID: -5188041540719533833, guid: 6286e9b1aed813143b6d4855366bfb64, type: 3}
+--- !u!23 &2426447334117366744
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227899898549107213}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1137511093685017222, guid: 6286e9b1aed813143b6d4855366bfb64, type: 3}
+  - {fileID: -7805457775891230367, guid: 6286e9b1aed813143b6d4855366bfb64, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4664178063976379877
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227899898549107213}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.4650366, y: 2.0747797, z: 0.18606767}
+  m_Center: {x: -0.006951928, y: -1.0352322, z: -0.019265302}
+--- !u!114 &1582063250349743913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227899898549107213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e567236e90166409f233b1462e2015, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useFlammibleOverride: 0
+  flammibleOverride: 0
+  useAblazeOverride: 0
+  ablazeOverride: 0
+  startingHealth: 100
+  health: 0
+  flameIntensityRequirement: 2
+  healthReductionAmount: 10
+  healthReductionRateInSecs: 1
+  usesButtonMashing: 1
+  buttonMashingApplicable: 1
+  buttonMashProgress: 0
+  buttonMashThreshold: 1
+  buttonMashEffortMultiplier: 1
+  buttonMashDecayAmount: 0.1
+  buttonMashDecayRateInSecs: 1
+  buttonMashingInProgressSmokeEmissionMultiplier: 10
+  flameParticle: {fileID: 5967397808671545774, guid: 530e397c7f1530241bd1f3833be5adbb, type: 3}
+  smokeParticle: {fileID: 7153867253948308117, guid: e0673314cbf865646b771b8735406360, type: 3}
+  colourControl: {fileID: 7811124346090522302, guid: 530e397c7f1530241bd1f3833be5adbb, type: 3}
